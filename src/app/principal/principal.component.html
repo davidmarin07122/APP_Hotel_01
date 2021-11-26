@@ -1,0 +1,24 @@
+
+<div><app-menu></app-menu></div>
+<section id="banner">
+    <div class="container">
+        <app-formulario-reservas></app-formulario-reservas>
+    </div>
+</section>
+
+<section class="mt-5">
+    <div class="row row-cols-1 row-cols-4">
+        <div class="col" *ngFor="let habitacion of listaHabitaciones">
+            
+            <div class="card h-100">
+                <img class="card-img-top h-100" src="{{habitacion.fotografia}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{habitacion.nombre}}</h5>
+                  <p class="card-text">{{habitacion.descripcion}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

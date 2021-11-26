@@ -1,0 +1,20 @@
+#banner{
+    background-image: url(../../assets/img/926116.jpg);
+    background-size: cover;
+    padding: 10% 2% 40% 2%;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner ::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(46, 60, 152, 0.45);
+    z-index: -1;
+    
+}
